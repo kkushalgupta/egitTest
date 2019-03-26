@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo]">
+  <test thread-count="5" name="SignUp(failed)">
+    <parameter name="webdriverLocation" value="C:/My Data/Selenium Training HCL/chromedriver_win32/chromedriver.exe"/>
+    <parameter name="appURL" value="http://newtours.demoaut.com/"/>
+    <parameter name="dataSheet" value="C:/Users/kushal_g/workspace/DemoAUT/TestData/MasterData.xlsx"/>
+    <classes>
+      <class name="com.test.cases.TestCase1">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="TC01"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.test.cases.TestCase1 -->
+    </classes>
+  </test> <!-- SignUp(failed) -->
+</suite> <!-- Failed suite [Demo] -->

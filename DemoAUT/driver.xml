@@ -1,0 +1,10 @@
+<suite name="Demo">
+    <test name="SignUp">
+        <parameter name="dataSheet" value="C:/Users/kushal_g/workspace/DemoAUT/TestData/MasterData.xlsx"/>	
+        <parameter name="appURL" value="http://newtours.demoaut.com/"/>
+        <parameter name="webdriverLocation" value="C:/My Data/Selenium Training HCL/chromedriver_win32/chromedriver.exe"/>
+        <classes >
+            <class name="com.test.cases.TestCase2" />
+        </classes>
+    </test>    
+</suite>
