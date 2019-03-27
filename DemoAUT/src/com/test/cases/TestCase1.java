@@ -18,7 +18,7 @@ public class TestCase1 {
   @Test
   public void TC01() {
 	  Signup signup = new Signup(driver);
-	  signup.procedureSignUp(data.getData("signup", "TC01"));
+	  signup.procedureSignUp(data.getData("Signup", "TC01"));
   }
   
   @BeforeMethod
