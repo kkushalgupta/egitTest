@@ -21,15 +21,12 @@ public class TestCase2 {
 	
 	//step 1 
 	Login login = new Login(driver);
-	if(login.procedureLogin(data.getData("Login", "TestUser")))
-	{
+	login.procedureLogin(data.getData("Login", "TestUser"));
+	
 	//step 2
 	FlightFinder flightFinder = new FlightFinder(driver);
 	flightFinder.procedureSearchFlight(data.getData("FlightFinder", "TC02"));
-	}else{
-		//failed reporting
-		
-	}
+	
   }
   
   @BeforeMethod
