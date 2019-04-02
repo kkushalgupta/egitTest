@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
 import com.test.library.TestData;
+import com.test.library.WebDriverOperations;
 import com.test.pages.Signup;
 
 public class TestCase1 {
@@ -22,15 +23,14 @@ public class TestCase1 {
   }
   
   @BeforeMethod
-  @Parameters({"dataSheet","appURL","webdriverLocation"})
-  public void beforeMethod(String dataSheet, String appURL, String webdriverLocation) {
+  @Parameters({"dataSheet","appURL","webDriverLocation"})
+  public void beforeMethod(String dataSheet, String appURL, String webDriverLocation) {
 	 //initializing data
 	 data = new TestData(dataSheet);
 	 //initializing browser
-	 System.setProperty("webdriver.chrome.driver",webdriverLocation);
-	 ChromeOptions options = new ChromeOptions();
-	 options.addArguments("--start-maximized");
-	 driver = new ChromeDriver(options);
+	 WebDriverOperations wdo = new WebDriverOperations();
+	 driver = wdo.initializeWebDriver(webDriverLocation);
+	 //navigate to AUT url
 	 driver.get(appURL);
   }
 
