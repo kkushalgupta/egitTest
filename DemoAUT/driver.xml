@@ -1,8 +1,8 @@
 <suite name="Demo">
     <test name="SignUp">
-        <parameter name="dataSheet" value="C:/Users/Kushal/git/egitTest/DemoAUT/TestData/MasterData.xlsx"/>	
+        <parameter name="dataSheet" value="/Users/Jarvis/git/egitTest/DemoAUT/TestData/MasterData.xlsx"/>	
         <parameter name="appURL" value="http://newtours.demoaut.com/"/>
-        <parameter name="webDriverLocation" value="E:/Soft/Development/chromedriver.exe"/>
+        <parameter name="webDriverLocation" value="/Users/Jarvis/Desktop/chromedriver"/>
         <classes >
             <class name="com.test.cases.TestCase2" />
         </classes>
